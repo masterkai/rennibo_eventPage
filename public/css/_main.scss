@@ -1,4 +1,8 @@
 .main {
+  &--slot {
+    background-image: url(../../build/images/mainBG_zongzi_slot.jpg);
+    background-size: cover;
+  }
   background-image: url(../../build/images/mainBG_zongzi.jpg);
   background-position: center;
   background-size: 100%;
