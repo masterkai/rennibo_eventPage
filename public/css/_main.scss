@@ -1,0 +1,95 @@
+.main {
+  background-image: url(../../build/images/mainBG_zongzi.jpg);
+  background-position: center;
+  background-size: 100%;
+  @include breakpoint(max-width 768px) {
+    background-size: cover;
+  }
+
+  .logo {
+    max-width: 180px;
+    @include breakpoint(max-width 500px) {
+      margin: auto;
+    }
+  }
+
+  .KV {
+    @include breakpoint(max-width 500px) {
+      display: none;
+    }
+  }
+
+  .KV-m {
+    display: none;
+    @include breakpoint(max-width 500px) {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .btnGroup {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    @include breakpoint(max-width 500px) {
+      flex-direction: column;
+    }
+
+    img {
+      @include breakpoint(max-width 768px) {
+        flex: 0 1 50%;
+        width: 50%;
+      }
+      @include breakpoint(max-width 500px) {
+        flex: 1 1 50%;
+        width: 80%;
+        margin: auto;
+      }
+      cursor: pointer;
+      flex: 0 1 38%;
+      width: 38%;
+    }
+  }
+
+  .eventRule {
+    @include breakpoint(max-width 768px) {
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+
+    .title {
+      @include breakpoint(max-width 768px) {
+        font-size: 1.875rem;
+      }
+      position: absolute;
+      font-size: 3.125rem;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -23%;
+      background-color: #65dde5;
+      padding: 10px;
+      color: white;
+      text-shadow: 0 0 9px rgba(0, 0, 0, 0.65);
+    }
+
+    p {
+      @include breakpoint(max-width 768px) {
+        font-size: 1.2rem;
+        max-width: 500px;
+      }
+      max-width: 768px;
+      margin: auto;
+      font-size: 1.875rem;
+      line-height: 2;
+    }
+
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+  }
+}
