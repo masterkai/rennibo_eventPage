@@ -65,12 +65,13 @@
     .title {
       @include breakpoint(max-width 768px) {
         font-size: 1.875rem;
+        top: -23%;
       }
       position: absolute;
       font-size: 3.125rem;
       left: 50%;
       transform: translateX(-50%);
-      top: -23%;
+      top: -14%;
       background-color: #65dde5;
       padding: 10px;
       color: white;

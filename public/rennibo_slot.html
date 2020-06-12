@@ -66,6 +66,7 @@
             <div class="title">活動方式</div>
             <p>
                 每日登入可以獲得一次免費的拉霸機遊戲，成功達到三顆金蛋或是從左至右依序為文字【任你博】就能獲得888獎金！！每日流水滿10000以上可再得一次拉霸機會，每日最多可轉3次。
+                <span class="btn btn-lg btn-primary" onclick="openAwards()">打開遊戲獎項</span>
             </p>
         </div>
 
@@ -89,6 +90,10 @@
 <script type="application/javascript" src="build/js/templates.js"></script>
 <script type="application/javascript" src="http://localhost:35729/livereload.js"></script>
 <script type="application/javascript" src="build/js/scripts.min.js"></script>
-
+<script>
+    function openAwards() {
+        $('.awardsSec').slideToggle()
+    }
+</script>
 </body>
 </html>

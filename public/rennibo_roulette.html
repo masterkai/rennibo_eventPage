@@ -67,6 +67,7 @@
             <p>
                 活動期間每日存款滿2000一次，滿5000兩次，滿7000三次
                 一天最多轉3次，5倍流水可出款
+                <span class="btn btn-lg btn-primary" onclick="openAwards()">打開遊戲獎項</span>
             </p>
         </div>
 
@@ -111,6 +112,10 @@
 <script type="application/javascript" src="build/js/templates.js"></script>
 <script type="application/javascript" src="http://localhost:35729/livereload.js"></script>
 <script type="application/javascript" src="build/js/scripts.min.js"></script>
-
+<script>
+  function openAwards() {
+    $('.awardsSec').slideToggle()
+  }
+</script>
 </body>
 </html>
